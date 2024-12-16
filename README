@@ -1,0 +1,92 @@
+Visão Geral do Projeto:
+Este é um aplicativo de rastreamento de investimentos baseado em React, que ajuda os usuários a gerenciar seus investimentos financeiros, definir metas e visualizar o crescimento de seu portfólio com cálculos de juros compostos.
+
+Principais Funcionalidades
+Gestão de Investimentos
+Definição de Metas
+Resumo Financeiro
+Histórico de Investimentos
+Visualização de Crescimento
+Cálculos de Juros Compostos
+
+Estrutura do Projeto:
+src/  
+├── components/           # Componentes de Interface  
+│   ├── ui/               # Componentes reutilizáveis de UI  
+│   │   └── progress.tsx  # Componente personalizado de barra de progresso  
+│   ├── FinancialSummary.tsx  
+│   ├── GoalDialog.tsx  
+│   ├── GoalProgress.tsx  
+│   ├── InvestmentChart.tsx  
+│   ├── InvestmentForm.tsx  
+│   └── InvestmentList.tsx  
+├── store/                # Gerenciamento de Estado  
+│   └── useInvestmentStore.ts  
+├── types/                # Tipos do TypeScript  
+│   └── investment.ts  
+├── utils/                # Funções utilitárias  
+│   ├── financial.ts  
+│   └── format.ts  
+├── App.tsx               # Componente principal da aplicação  
+└── main.tsx              # Ponto de entrada da aplicação  
+Componentes Principais
+App.tsx
+
+Componente de layout principal
+Organiza a estrutura geral da aplicação
+Implementa layout responsivo em grid
+Componentes:
+
+FinancialSummary: Exibe totais e métricas de investimento
+GoalDialog: Modal para definição de metas de investimento
+GoalProgress: Mostra o progresso em relação às metas
+InvestmentChart: Visualiza o crescimento dos investimentos ao longo do tempo
+InvestmentForm: Formulário para adicionar novos investimentos
+InvestmentList: Visualização tabular do histórico de investimentos com filtros
+Gerenciamento de Estado
+Utiliza Zustand para gerenciamento de estado
+useInvestmentStore: Gerencia dados de investimentos e metas
+Utilitários
+financial.ts: Realiza cálculos de juros compostos
+format.ts: Formatação de moeda para BRL (Real Brasileiro)
+Tecnologias Utilizadas
+Core
+
+React
+TypeScript
+Vite
+Estilo
+
+Tailwind CSS
+Tema escuro com destaques em azul
+Framer Motion para animações
+Componentes de UI
+
+Radix UI para componentes acessíveis
+Chart.js para visualização de dados
+Lucide React para ícones
+Manipulação de Formulários
+
+React Hook Form
+Zod para validação
+Gerenciamento de Estado
+
+Zustand
+Funcionalidades Detalhadas
+Rastreamento de Investimentos
+Adicionar, editar e excluir investimentos
+Categorizar por tipo (Renda Fixa, Ações, ETFs)
+Acompanhar datas e valores de investimento
+Gestão de Metas
+Definir metas de investimento com valores-alvo
+Acompanhar progresso com indicadores visuais
+Exibir porcentagem de conclusão
+Análise Financeira
+Calcular juros compostos (10% ao ano)
+Mostrar o total investido
+Exibir saldo atual com juros
+Visualização de Dados
+Gráfico de linhas mostrando o crescimento dos investimentos
+Comparar valor investido versus total com juros
+Pontos de dados mensais para rastreamento detalhado
+Este projeto segue as melhores práticas modernas do React, implementa uma arquitetura limpa e fornece uma interface profissional com animações suaves e design responsivo.
